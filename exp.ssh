@@ -1,0 +1,15 @@
+#!/bin/bash
+# w/o ADA
+#python main.py --dataset_name WV3 --model_name MSL_RIJAN_PD --dynamic False --epoch_num 500
+# w/o REC
+#python main.py --dataset_name WV3 --model_name MSL_RIJAN_PD --recursive False --epoch_num 500
+# with ESW
+python main.py --dataset_name WV3 --model_name MSL_RIJAN_PD --gate_method ESW --epoch_num 500
+# with SSW
+python main.py --dataset_name WV3 --model_name MSL_RIJAN_PD --gate_method SSW --epoch_num 500
+# wo_FU
+python main.py --dataset_name WV3 --model_name MSL_RIJAN_PD --gate_input wo_FU --epoch_num 500
+# wo_SU
+python main.py --dataset_name WV3 --model_name MSL_RIJAN_PD --gate_input wo_SU --epoch_num 500
+# with F only
+python main.py --dataset_name WV3 --model_name MSL_RIJAN_PD --gate_input only_F --epoch_num 500
